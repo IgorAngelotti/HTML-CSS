@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(102, 102, 102);
+    text-align: right;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+#assuntos > p{
+    font-weight: bolder;
+}
+
+article{
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+article > aside{
+    background-color: rgb(165, 165, 165);
+    padding: 0px;
+    padding: 1px;
+}
+
+article > aside > p{
+    margin: 0px;
+}
+
+footer{
+    background-color: black;
+    text-align: right;
+    color: white;
+    padding: 5px 20px 5px 0px;
+    margin: 0px;
+}
+
+footer > p{
+    margin: 0px;
+}
+

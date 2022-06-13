@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas (personalizadas)</title>
+    <style>
+    @font-face {
+        font-family: 'oldlondon' ;
+        src: url('fonts/OldLondon.ttf' ) format('truetype'), url('fonts/Olondon_.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(124, 236, 236);
+            text-align: justify;
+        }
+        h1{
+            font-family: 'oldlondon', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            text-align: center;
+        }
+        h2{
+            font-family: 'oldlondon', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+            text-align: center;
+        }    
+        main{
+            background-color: white;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(93, 177, 177, 0.836) ;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, reiciendis totam odit ea dicta nihil numquam explicabo fugit nulla blanditiis accusamus voluptatibus? Illum impedit reprehenderit, dolores aliquam temporibus molestiae iure!</p>
+        <h2>Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident repellendus fugiat, delectus eos incidunt illo est debitis nesciunt quod odit. Molestiae consequatur id eveniet sapiente vitae nisi cumque, iusto modi.</p>
+    </main>
+</body>
+</html>

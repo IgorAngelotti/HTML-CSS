@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        
+        /* SE QUISER, DÁ PRA TRANSFORMAR UM BOX-LEVEL EM INLINE LEVEL APENAS COLOCANDO -> DISPLAY: INLINE.
+           E TAMBÉM VICE VERSA APENAS COLOCANDO -> DISPLAY: BOX
+           DISPLAY: INLINE-BOX (VAI CONTINUAR SENDO INLINE, MAS VAI TER ALGUMAS CARACTERÍSTICAS DE BOX) */
+        
+        h1{ /* BOX-LEVEL */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            border-width: 5px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /* shorthand para border (em ordem) -> border: width style e color */
+            border: 5px solid darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        
+            /* shorthand para padding (em ordem) -> padding: top right bottom left. (Se as 4 forem iguais, só é preciso informar apenas um tamanho. Se informar dois valores, o primeiro valor irá alterar em cima e embaixo e o segundo alterará na direita e esquerda) */
+            padding: 10px 10px 10px 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+
+             /* shorthand para margin (em ordem) -> margin: top right bottom left (Posso colocar auto na direita e esquerda para centralizar os lados, ou apenas indicar um único valor auto para centralizar totalmente a caixa) */
+             margin: 10px auto 20px auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;
+            
+            /* shorthand para outline (em ordem) -> outline: width style color */
+            outline: 5px dashed red ;        
+        }
+
+        a{ /* INLINE-LEVEL */
+            border-width: 5px;
+            border-style: solid;
+            border-color: aquamarine;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+
+        a:hover{
+            color: rgb(0, 0, 150);
+        }
+  
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como isso funciona</p>
+    
+</body>
+</html>

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family:'android';
+    src: url('../pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #f8e2c0;
+    --cor1: #ffffff;
+    --cor2: #d3fdd3;
+    --cor3: #47b856;
+    --cor4: #008000;
+    --cor5: #054e05;
+    --cor6: #083508;
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Roboto Condensed', sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+
+header{ 
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    min-height: 100px;
+    text-align: center;
+    margin: 0px;
+    font-weight: bolder;
+    min-width: auto;
+}
+
+header > h1{
+    font-family:var(--fonte-destaque);
+    font-size: 2.5em;
+    margin: 20px auto;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.263);
+}
+
+header > p{
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.263);
+}
+
+nav{
+    text-align: left;
+    padding: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.281);
+}
+
+nav > a{
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    display: inline-block;
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+.topo{
+    background-image: linear-gradient(to top, rgb(8, 53, 8) , rgb(5, 78, 5), green, rgb(71, 184, 86));
+}
+
+main{
+    background-color: white;
+    padding: 20px; 
+    margin: auto;
+    min-width: 300;  /*importante: antes estava no 300px */
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main  h1{
+    font-family:var(--fonte-android);
+    color: var(--cor5);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, #d3fdd3, transparent);
+    padding: 5px;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.082);
+}
+
+main p{
+    margin: 20px 0px;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+img{
+    width: 100%;
+}
+
+main source{
+    width: 100%;
+}
+
+main img.pequena{
+    width: 50%;
+    margin: auto;
+    display: block; 
+}
+
+main strong, a{
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 2px 0px 4px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main a.externo::after{
+    content: '\00A0\1f517'; /*📌*/
+}
+
+article > aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px #00000027;
+    border: 1px solid var(--cor4);
+}
+
+article > aside > h3{
+    background-color: var(--cor3);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+article > aside > p{
+    margin: 15px 0px;
+    line-height: 1.5em;  
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+li abbr{
+    text-decoration: none;
+}
+
+footer{
+    background-color:rgb(8, 53, 8);
+    color: white;
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+/*
+header{ 
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    min-height: 100px;
+    text-align: center;
+    margin: 0px;
+    font-weight: bolder;
+    min-width: auto;
+}
+
+header > h1{
+    font-family:var(--fonte-destaque);
+    font-size: 2.5em;
+    margin: 20px auto;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.263);
+}
+
+header > p{
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.263);
+}
+
+*/

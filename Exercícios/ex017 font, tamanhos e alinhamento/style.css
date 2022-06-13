@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body{
+    background-image: linear-gradient( to right, #2AF1F7, #32E0B5);
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* 
+    Medidas absolutas
+     -> cm, mm, in (polegada), *px*, pt pc
+
+
+    Medidas relativas
+     -> *em* (altura do M maiúsculo), ex (altura X), rem, vw, vh, %
+     -> Geralmente, 16px =  1em
+
+    */
+}
+
+main{
+    width: 500px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #1c9da1a9;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;    
+}
+
+h2{
+    text-align: center;
+}

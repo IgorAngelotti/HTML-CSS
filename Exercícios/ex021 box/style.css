@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    margin: 0px;
+}
+
+header{
+    background-color: lightgray;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav{
+    width: 500px;
+    text-align: center;
+    background-color: lightgray;
+    padding: 3px;
+    margin: auto;
+    border: 2px solid rgb(51, 51, 51);
+    box-shadow: 2px 2px 5px 1px #58565666;
+
+}
+
+nav > a {
+    margin-right: 35px;
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+}
+
+nav > a:hover{
+    color: beige;
+}
+
+main{
+    background-color: white;
+    padding: 10px 0px 10px 0px;    
+}
+
+
+article{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 0px 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px 0px #0000004d;
+}
+
+article > h2{
+    text-align: center;
+}
+
+article > aside > p{
+    background-color:rgb(184, 184, 184);
+    margin: 0px 0px 50px 0px;
+}
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 5px 20px 5px 0px;
+    margin: 0px
+}
+
+footer > p {
+    margin: 0px;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+#bola{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagend dinâmicas</h1>
+    <p>Tente abrir essa imagem em dispositivos diferentes ou apenas mude o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagen flexível">
+    </picture>
+    
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdios em html5</p>
+    <audio src="media/Talky Beat - Twin Musicom.mp3" controls></audio> 
+    
+    <!--FORMATOS COMPATÍVEIS: MP3, WAV E OGG-->
+    <p>Outra forma</p>
+    <audio preload="metadata" controls>
+        <source src="media/Talky Beat - Twin Musicom.mp3" type="audio/mpeg">
+        <source src="media/Talky Beat - Twin Musicom.ogg" type="audio/ogg">
+        <source src="media/Talky Beat - Twin Musicom.wa" type="audio/wav">
+        <P>Seu navegador não é compatível para tocar a música. <a href="media/Talky Beat - Twin Musicom.mp3">Clique aqui para baixá-la</a></P>
+
+    <!--DESSE MODO, O NAVEGADOR VAI CARREGAR O FORMATO QUE FOR COMPATÍVEL. CASO NAO FOR COMPATÍVEL, ELE NAO IRÁ CARREGAR E VAI APARECER A MENSAGEM ACIMA-->
+    </audio>
+    <p><a href="media/Talky Beat - Twin Musicom.mp3" target="_blank" download="media/talky beat - twin musicom.mp3" type="mpeg" >clique aqui para baixar a música</a></p>
+
+</body>
+</html>

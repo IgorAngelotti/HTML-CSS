@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover{
+            color: rgb(163, 0, 163);
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: rgb(105, 63, 105);
+        }
+
+        .importante::before{
+            content: ' ☞ ';
+            color: black;
+        }
+
+        .importante::after{
+            content: ' ☜ ';
+            color: black;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCdPypRz1ogvN8lFqWun4uYQ" target="_blank" class="importante">Canal do YouTube</a></li>
+        <li><a href="https://www.instagram.com/igorangelotti/" target="_blank">Instagram</a></li>
+        <li><a href="https://f1tv.formula1.com/" target="_blank">Site da F1</a></li>
+        <li><abbr title="teste da tag abbr sem estar sublinhada por causa do text decoration">asjkdfhjkldsf</abbr></li>
+
+    </ul>
+</body>
+</html>
