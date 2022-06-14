@@ -14,7 +14,7 @@ header{
 }
 
 nav{
-    width: 500px;
+    max-width: 500px;
     text-align: center;
     background-color: lightgray;
     padding: 3px;
