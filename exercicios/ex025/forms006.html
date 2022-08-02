@@ -21,7 +21,8 @@
         <p>
             <label for="inível">Nível de satisfação: </label>
             <input type="range" name="nivel" id="inível" min="0" max="5"
-            value="2" >
+            value="2" oninput="alcance.innerHTML = Number(inível.value)">
+            <output id="alcance">2</output>
         </p>
         <p>
             <label for="ifoto">Foto de perfil:</label>
@@ -31,7 +32,6 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-
     </form>
 </body>
 </html>
