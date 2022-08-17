@@ -1,3 +1,71 @@
 @charset "utf-8";
 
 /* todas as demais mídias */
+
+/* typical device breakpoints
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768 px até 992 px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg); /*DESNECESSÁRIO, POIS NÃO APARECE NA IMPRESSORA*/
+        color: black;
+        font-size: 1.5em;
+        display: block;
+        text-align: center;
+    }
+
+    body::after{
+        content: 'Background-image não funciona com a impressora';
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media only screen and (min-width: 768px){ /*TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg); 
+    }
+
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media only screen and (min-width: 992px){ /*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media only screen and (min-width: 1200px){ /*GRANDES TELAS*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        max-width: 1000px;
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}

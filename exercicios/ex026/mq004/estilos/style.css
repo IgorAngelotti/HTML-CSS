@@ -11,20 +11,20 @@
 }
 
 html{
-    width: 100vw;
     height: 100vh;
 }
 
 body{
-    background: black url(../imagens/back-phone.jpg) no-repeat fixed;
+    background: black url(../imagens/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 main{
     background: rgba(255, 255, 255, 0.644);
-    width: 90vw;
+    max-width: 400px;
     margin: auto;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -46,3 +46,4 @@ img{
 #print{display: none;}
 #pc{display: none;}
 #tv{display: none;}
+
