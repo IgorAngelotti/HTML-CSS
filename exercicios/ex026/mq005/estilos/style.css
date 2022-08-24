@@ -18,8 +18,7 @@ header > h1{
 }
 
 menu{
-    display: block;
-    padding-bottom: 2px;
+    display: none;
 }
 
 menu ul{
@@ -38,6 +37,22 @@ menu > ul > li > a{
 
 menu > ul > li > a:hover{
     background-color: darkgray;
+    transition: 0.15s;
+}
+
+span#burguer{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    transition: 0.15s;
 }
 
 main{
