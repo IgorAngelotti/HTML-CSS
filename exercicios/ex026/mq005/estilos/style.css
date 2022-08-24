@@ -41,8 +41,8 @@ menu > ul > li > a:hover{
 }
 
 span#burguer{
-    background-color: rgb(48, 48, 48);
-    color: white;
+    background-color: #303030;
+    color: #ffffff;
     display: block;
     padding: 5px;
     text-align: center;
