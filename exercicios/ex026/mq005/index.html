@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Site Principal</a></li>
+                <li><a href="#">Redação</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Suporte</a></li>
             </ul>
         </menu>
     </header>
@@ -31,8 +32,18 @@
     </main>
     <script>
         var menu1 = document.getElementById('itens')
-        var burguer = document.getElementById('burguer')
+        function mudouTamanho (){
+            if(window.innerWidth >= 768){
+                menu1.style.display = 'block'
+            } else{
+                menu1.style.display = 'none'
+            }
+
+        }
+
+
         function clickMenu (){
+    
             if (menu1.style.display == 'block'){
                menu1.style.display = 'none'
             } else{
