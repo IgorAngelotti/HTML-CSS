@@ -11,8 +11,7 @@
 
     menu > ul > li{
         display: inline-block;
-
-        box-shadow:  2px -2px 5px  rgba(122, 122, 122, 0.644);
+        box-shadow:  0px 0px 5px  rgba(122, 122, 122, 0.644);
     }
 
     menu > ul > li > a{
